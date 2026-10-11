@@ -1,6 +1,6 @@
-# Shruti Bawankar — Data Analytics Portfolio
+# Shruti Bawankar — Portfolio
 
-A personal data analytics portfolio built with **React (Next.js)**, **vanilla CSS + CSS Modules**, **semantic HTML5 (via JSX)**, and **JSON** configuration. No Tailwind, no Framer Motion — every animation is hand-written CSS so the project stays dependency-light and fully editable.
+A personal  portfolio built with **React (Next.js)**, **vanilla CSS + CSS Modules**, **semantic HTML5 (via JSX)**, and **JSON** configuration. No Tailwind, no Framer Motion — every animation is hand-written CSS so the project stays dependency-light and fully editable.
 
 ## Tech stack mapping
 
