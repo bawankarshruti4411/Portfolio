@@ -1,0 +1,292 @@
+/* About.module.css — About Me window content */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--xp-window-bg);
+  overflow: hidden;
+}
+
+/* ── Tab strip ── */
+.tabStrip {
+  display: flex;
+  align-items: flex-end;
+  background: var(--xp-menubar-bg);
+  border-bottom: 2px solid #808080;
+  padding: 4px 4px 0;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.tab {
+  padding: 5px 14px 6px;
+  font-size: 12px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  color: #000;
+  background: #c4c0b8;
+  border: 1px solid;
+  border-color: #fff #808080 transparent #fff;
+  border-bottom: none;
+  cursor: pointer;
+  border-radius: 3px 3px 0 0;
+  margin-bottom: -2px;
+  position: relative;
+  z-index: 0;
+  transition: background var(--duration-fast);
+  user-select: none;
+}
+
+.tab:hover:not(.tabActive) { background: #d4d0c8; }
+
+.tabActive {
+  background: var(--xp-window-bg);
+  font-weight: bold;
+  z-index: 1;
+  border-color: #808080 #808080 var(--xp-window-bg) #808080;
+  border-bottom: 2px solid var(--xp-window-bg);
+  padding-bottom: 8px;
+}
+
+.tabFiller {
+  flex: 1;
+  border-bottom: 2px solid transparent;
+}
+
+/* ── Tab content ── */
+.tabContent {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 16px 18px;
+  min-height: 0;
+}
+
+/* ── Shared section header ── */
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  color: #000;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #c8c4bc;
+}
+
+.sectionIcon { font-size: 16px; }
+
+/* ── Profile tab ── */
+.profileTab {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bioSection { flex: 1; }
+
+.bioPara {
+  font-size: 12px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  color: #222;
+  line-height: 1.75;
+  margin-bottom: 10px;
+}
+
+/* Clock widget */
+.clockWidget {
+  background: #1a1a2e;
+  border: 2px solid;
+  border-color: #808080 #fff #fff #808080;
+  padding: 12px 16px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.clockLabel {
+  font-size: 10px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  color: #7a8fa8;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+
+.clockDisplay {
+  font-family: var(--font-terminal);
+  font-size: 28px;
+  color: var(--neon-cyan);
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 10px rgba(0,212,255,0.4);
+}
+
+.clockSub {
+  font-size: 10px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  color: #7a8fa8;
+  margin-top: 4px;
+}
+
+/* ── Skills tab ── */
+.skillsTab {
+  padding-bottom: 6px;
+}
+
+.skillGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 16px;
+}
+
+.skillCard {
+  background: #ffffff;
+  border: 1px solid #7f9db9;
+  border-radius: 2px;
+  padding: 8px 10px;
+  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.skillGroup {
+  font-size: 11px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  font-weight: bold;
+  color: #0058e6;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #d4d0c8;
+}
+
+.skillList {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.skillItem {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 3px 6px;
+  font-size: 12px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  color: #111;
+  border-radius: 2px;
+  cursor: default;
+  transition: background var(--duration-fast);
+}
+
+.skillItem:hover {
+  background: #eef3ff;
+  color: #0058e6;
+}
+
+.skillDot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #0058e6;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .skillGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Philosophy tab ── */
+
+
+.philoCard {
+  background: #f4f0e8;
+  border: 1px solid;
+  border-color: #808080 #fff #fff #808080;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  border-radius: 1px;
+}
+
+.philoTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  color: #000;
+  margin-bottom: 4px;
+}
+
+.philoNumber {
+  color: #0058e6;
+  font-size: 14px;
+  min-width: 20px;
+}
+
+.philoDetail {
+  font-size: 12px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  color: #444;
+  line-height: 1.6;
+  padding-left: 28px;
+}
+
+/* ── Status bar ── */
+.statusBar {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  height: 22px;
+  background: var(--xp-statusbar-bg);
+  border-top: 1px solid #808080;
+  padding: 0 3px;
+  flex-shrink: 0;
+}
+
+.statusSection {
+  height: 18px;
+  line-height: 18px;
+  padding: 0 6px;
+  font-size: 11px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  border: 1px solid;
+  border-color: #808080 #fff #fff #808080;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  min-width: 0;
+}
+
+.resumeBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  background: linear-gradient(to bottom, #f0ede5 0%, #d4d0c8 100%);
+  border: 1px solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  color: #000;
+  cursor: pointer;
+  box-shadow: 1px 1px 0 #000000;
+  transition: all 0.1s ease;
+}
+
+.resumeBtn:hover {
+  background: linear-gradient(to bottom, #ffffff 0%, #e0ded6 100%);
+}
+
+.resumeBtn:active {
+  border-color: #808080 #ffffff #ffffff #808080;
+  box-shadow: none;
+  transform: translate(1px, 1px);
+}
+

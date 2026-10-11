@@ -1,0 +1,278 @@
+/* ==========================================================================
+   GLOBALS.CSS — Windows XP Portfolio Edition
+   Shruti Bawankar — Data Analytics Portfolio
+   XP design tokens + reset + desktop shell utilities.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&family=Inter:wght@400;500;600;700&display=swap');
+
+/* ─────────────────────────── Design Tokens ─────────────────────────── */
+:root {
+  /* XP Window Chrome */
+  --xp-window-bg: #ece9d8;
+  --xp-window-border: #0a246a;
+  --xp-title-active-1: #0058e6;
+  --xp-title-active-2: #3a9ef5;
+  --xp-title-inactive-1: #7a96df;
+  --xp-title-inactive-2: #c8d6f5;
+  --xp-btn-bg: #d4d0c8;
+  --xp-btn-light: #ffffff;
+  --xp-btn-dark: #808080;
+  --xp-btn-mid: #b0aba0;
+  --xp-text: #000000;
+  --xp-text-secondary: #333333;
+  --xp-title-text: #ffffff;
+  --xp-menubar-bg: #d4d0c8;
+  --xp-panel-bg: #f0ede5;
+  --xp-input-bg: #ffffff;
+  --xp-selected-bg: #0058e6;
+  --xp-selected-text: #ffffff;
+  --xp-tree-bg: #ffffff;
+  --xp-statusbar-bg: #d4d0c8;
+  --xp-border-1px: 1px solid #808080;
+
+  /* Desktop / Wallpaper */
+  --desktop-bg: #0a0e1a;
+  --neon-cyan: #00d4ff;
+  --neon-green: #39ff14;
+  --neon-glow: rgba(0, 212, 255, 0.12);
+  --neon-blue-glow: rgba(0, 88, 230, 0.18);
+
+  /* Taskbar */
+  --taskbar-h: 42px;
+
+  /* Start Button */
+  --start-green-1: #64b564;
+  --start-green-2: #3a8f3a;
+
+  /* Typography */
+  --font-pixel: 'Press Start 2P', monospace;
+  --font-terminal: 'VT323', monospace;
+  --font-system: 'Tahoma', 'Segoe UI', 'Inter', sans-serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+
+  /* Motion */
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 0.1s;
+  --duration-base: 0.2s;
+
+  /* Legacy alias kept for data components */
+  --color-accent: #00d4ff;
+  --color-text-primary: #ece9d8;
+  --color-text-secondary: #b0c4de;
+  --color-text-muted: #7a8fa8;
+  --color-online: #39ff14;
+  --color-bg: var(--desktop-bg);
+}
+
+/* ──────────────────────────────── Reset ──────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--desktop-bg);
+  font-family: var(--font-system);
+  font-size: 13px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  height: 100vh;
+  user-select: none;
+}
+
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+ul, ol { list-style: none; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Focus rings — XP dotted style */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 1px dotted #000;
+  outline-offset: 2px;
+}
+
+/* Text selection — XP blue */
+::selection {
+  background: #0058e6;
+  color: #fff;
+}
+
+/* ─────────────────────── XP 3-D Bevel Utilities ─────────────────────── */
+/* Raised surface (button up state) */
+.xpRaised {
+  border: 1px solid;
+  border-color: #fff #808080 #808080 #fff;
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,0.9),
+              inset -1px -1px 0 rgba(0,0,0,0.25);
+}
+
+/* Sunken / pressed */
+.xpSunken {
+  border: 1px solid;
+  border-color: #808080 #fff #fff #808080;
+  box-shadow: inset 1px 1px 0 rgba(0,0,0,0.2);
+}
+
+/* Panel / group box */
+.xpPanel {
+  background: var(--xp-window-bg);
+  border: 1px solid;
+  border-color: #808080 #fff #fff #808080;
+  padding: 8px;
+}
+
+/* Scrollbar — XP style */
+::-webkit-scrollbar { width: 17px; }
+::-webkit-scrollbar-track {
+  background: var(--xp-btn-bg);
+  border: 1px solid #808080;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--xp-btn-bg);
+  border: 1px solid;
+  border-color: #fff #808080 #808080 #fff;
+  min-height: 20px;
+}
+::-webkit-scrollbar-button {
+  display: block;
+  width: 17px;
+  height: 17px;
+  background: var(--xp-btn-bg);
+  border: 1px solid;
+  border-color: #fff #808080 #808080 #fff;
+}
+
+/* XP Button component */
+.xpButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--xp-btn-bg);
+  border: 1px solid;
+  border-color: #fff #808080 #808080 #fff;
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,0.8),
+              inset -1px -1px 0 rgba(0,0,0,0.15);
+  padding: 4px 16px;
+  font-size: 12px;
+  font-family: var(--font-system);
+  cursor: pointer;
+  color: #000;
+  border-radius: 2px;
+  min-width: 80px;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.xpButton:hover {
+  background: #e0dcd4;
+}
+
+.xpButton:active {
+  border-color: #808080 #fff #fff #808080;
+  box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2);
+  padding-top: 5px;
+  padding-left: 17px;
+}
+
+.xpButton:focus-visible {
+  outline: 1px dotted #000;
+  outline-offset: -3px;
+}
+
+/* Status bar segments */
+.xpStatusBar {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  height: 22px;
+  background: var(--xp-statusbar-bg);
+  border-top: 1px solid #808080;
+  padding: 0 4px;
+  flex-shrink: 0;
+  font-size: 11px;
+  font-family: var(--font-system);
+}
+
+.xpStatusSection {
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 6px;
+  border: 1px solid;
+  border-color: #808080 #fff #fff #808080;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Desktop shell */
+.desktopShell {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+}
+
+/* Legacy helpers for old components */
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+/* ─────────────────────── Mobile fallback ─────────────────────── */
+@media (max-width: 767px) {
+  body {
+    overflow: auto;
+    height: auto;
+    user-select: auto;
+  }
+}
+
+/* ─────────────────────── Print Optimizations ─────────────────────── */
+@media print {
+  @page {
+    margin: 0.35in 0.4in;
+    size: auto;
+  }
+
+  body {
+    background: #ffffff !important;
+    overflow: visible !important;
+    height: auto !important;
+    color: #000000 !important;
+    user-select: auto !important;
+  }
+
+  /* When printing, hide background wallpaper and chrome */
+  div[class*="desktop"],
+  div[class*="taskbar"],
+  div[class*="iconCol"],
+  div[class*="titleBar"],
+  div[class*="toolbar"],
+  div[class*="statusBar"] {
+    background: transparent !important;
+  }
+}
+

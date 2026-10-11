@@ -1,0 +1,57 @@
+/* Desktop.module.css — Sunny Chibi XP Wallpaper */
+
+.desktop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  /* ── Wallpaper fitting the window cleanly ── */
+  background-image: url('/wallpaper.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #4a9ce8;
+
+  /* Ensure taskbar space at bottom */
+  padding-bottom: var(--taskbar-h);
+  user-select: none;
+}
+
+/* ── Icon column (left side) — above 3D canvas ── */
+.iconCol {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  bottom: calc(var(--taskbar-h, 42px) + 10px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 8px;
+  z-index: 1;
+}
+
+/* ── Mobile layout fallback ── */
+@media (max-width: 767px) {
+  .desktop {
+    position: static;
+    height: auto;
+    overflow: auto;
+    padding-bottom: 0;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .iconCol {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "shruti-bawankar-data-analytics-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal data analytics portfolio for Shruti Bawankar, built with React (Next.js), vanilla CSS, and CSS Modules.",
+  "author": "Shruti Bawankar",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "three": "^0.185.1"
+  },
+  "devDependencies": {
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.5"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  }
+}

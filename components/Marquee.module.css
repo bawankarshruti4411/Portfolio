@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Marquee.module.css - Washi Tape Scrolling Text
+   ========================================================================== */
+
+.marqueeWrap {
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    black 6%,
+    black 94%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    black 6%,
+    black 94%,
+    transparent 100%
+  );
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: 0;
+  animation-name: scrollLeft;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.trackReverse {
+  animation-name: scrollRight;
+}
+
+.tag {
+  flex-shrink: 0;
+  font-family: var(--font-typewriter);
+  font-size: 0.88rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #2b2b28;
+  padding: 0.2rem 1.5rem;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+}
+
+.tag::after {
+  content: '★';
+  margin-left: 1.5rem;
+  font-size: 0.75rem;
+  opacity: 0.4;
+  color: #2b2b28;
+}
+
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track,
+  .trackReverse {
+    animation: none;
+  }
+}

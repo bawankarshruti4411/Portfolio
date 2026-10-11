@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "allowJs": true,
+    "target": "es2017",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/styles/*": ["styles/*"],
+      "@/data/*": ["data/*"],
+      "@/pages/*": ["pages/*"],
+      "@/public/*": ["public/*"]
+    }
+  },
+  "exclude": ["node_modules", ".next"]
+}

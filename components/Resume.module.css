@@ -1,0 +1,177 @@
+/* Resume.module.css - Windows XP Document Viewer Window Styling */
+
+.resumeViewer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #ece9d8;
+  overflow: hidden;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  user-select: text;
+}
+
+/* Toolbar */
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 6px;
+  background: linear-gradient(to bottom, #f0ede5 0%, #d4d0c8 100%);
+  border-bottom: 1px solid #808080;
+  box-shadow: inset 0 1px 0 #ffffff;
+  flex-shrink: 0;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.toolGroup {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.toolDivider {
+  width: 1px;
+  height: 22px;
+  background: #999;
+  border-right: 1px solid #fff;
+  margin: 0 4px;
+}
+
+/* XP Toolbar Button */
+.xpToolBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 8px;
+  background: linear-gradient(to bottom, #fafafa 0%, #ece9d8 100%);
+  border: 1px solid #7f9db9;
+  border-radius: 3px;
+  font-size: 11.5px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  color: #000;
+  cursor: pointer;
+  box-shadow: inset 1px 1px 0 #fff;
+  transition: all 0.1s ease;
+  user-select: none;
+}
+
+.xpToolBtn:hover {
+  background: linear-gradient(to bottom, #fff 0%, #e0ded6 100%);
+  border-color: #0058e6;
+}
+
+.xpToolBtn:active {
+  background: linear-gradient(to top, #fafafa 0%, #ece9d8 100%);
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.xpToolBtnPrimary {
+  font-weight: 700;
+  border-color: #0058e6;
+  background: linear-gradient(to bottom, #f5f9ff 0%, #dce8fc 100%);
+}
+
+.xpToolBtnPrimary:hover {
+  background: linear-gradient(to bottom, #ffffff 0%, #cce0ff 100%);
+}
+
+.btnIcon {
+  font-size: 13px;
+  line-height: 1;
+}
+
+.zoomLabel {
+  font-size: 11px;
+  color: #333;
+  min-width: 44px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Document Workspace Area */
+.docWorkspace {
+  flex: 1;
+  background: #525659;
+  overflow: auto;
+  padding: 24px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 0;
+}
+
+.docScaleWrapper {
+  transform-origin: top center;
+  transition: transform 0.15s ease-out;
+  display: flex;
+  justify-content: center;
+}
+
+/* Toast Message */
+.copyToast {
+  background: #2a6f2a;
+  color: #fff;
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 2px;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-2px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Status Bar */
+.statusBar {
+  height: 22px;
+  background: #d4d0c8;
+  border-top: 1px solid #808080;
+  box-shadow: inset 0 1px 0 #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  gap: 4px;
+  font-size: 11px;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.statusSection {
+  flex: 1;
+  padding: 1px 6px;
+  border: 1px solid;
+  border-color: #808080 #ffffff #ffffff #808080;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #222;
+}
+
+.statusRight {
+  flex: 0 0 auto;
+  min-width: 90px;
+  text-align: center;
+}
+
+/* Print Rules for Document Viewer */
+@media print {
+  .toolbar,
+  .statusBar {
+    display: none !important;
+  }
+
+  .resumeViewer,
+  .docWorkspace {
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    height: auto !important;
+  }
+
+  .docScaleWrapper {
+    transform: none !important;
+  }
+}

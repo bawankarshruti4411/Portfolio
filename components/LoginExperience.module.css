@@ -1,0 +1,164 @@
+.screen {
+  --login-ink: #fff;
+  position: fixed;
+  z-index: 100000;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: var(--login-ink);
+  font-family: Tahoma, 'Segoe UI', sans-serif;
+  background:
+    linear-gradient(rgba(7, 46, 133, .055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(7, 46, 133, .055) 1px, transparent 1px),
+    linear-gradient(180deg, #8fb5ff 0%, #6e9df4 48%, #8eb5ff 100%);
+  background-size: 4px 4px, 4px 4px, auto;
+}
+
+.topBar {
+  height: clamp(68px, 16vh, 150px);
+  flex: 0 0 auto;
+  background:
+    linear-gradient(rgba(0, 11, 76, .14) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 11, 76, .14) 1px, transparent 1px),
+    linear-gradient(110deg, #001d87, #0036ba 58%, #062990);
+  background-size: 4px 4px, 4px 4px, auto;
+  border-bottom: 3px solid rgba(203, 225, 255, .72);
+  box-shadow: 0 2px 8px rgba(5, 26, 99, .28);
+}
+
+.welcome,
+.selection {
+  flex: 1;
+  min-height: 0;
+}
+
+.welcome {
+  display: grid;
+  place-items: center;
+  animation: welcome-in .8s cubic-bezier(.2, .75, .25, 1) both;
+}
+
+.welcomeWord {
+  color: #fff;
+  font-size: clamp(3.5rem, 9vw, 7rem);
+  line-height: 1;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -.055em;
+  text-shadow: 0 3px 2px rgba(0, 20, 82, .38), 0 12px 32px rgba(0, 28, 117, .24);
+}
+
+.selection {
+  display: grid;
+  grid-template-columns: minmax(230px, .95fr) minmax(300px, 1fr);
+  align-items: center;
+  width: min(1100px, calc(100% - 64px));
+  margin: 0 auto;
+  animation: selection-in .48s ease-out both;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, .32);
+  text-shadow: 0 2px 3px rgba(0, 28, 102, .38);
+}
+
+.windowsLogo {
+  width: clamp(92px, 13vw, 150px);
+  height: clamp(92px, 13vw, 150px);
+  object-fit: contain;
+  filter: drop-shadow(0 3px 5px rgba(0, 30, 93, .35));
+}
+
+.brandCopy { display: flex; flex-direction: column; align-items: center; margin-top: 10px; }
+.brandName { font-size: clamp(1.55rem, 3.4vw, 2.6rem); font-weight: 700; letter-spacing: -.045em; }
+.brandSubtitle { margin-top: -2px; font-size: 1rem; font-style: italic; font-weight: 600; }
+
+.loginContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px clamp(20px, 5vw, 62px);
+}
+
+.instruction { font-size: clamp(1rem, 2.1vw, 1.45rem); font-weight: 600; text-shadow: 0 1px 2px rgba(0, 25, 97, .4); }
+
+.profileCard {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 112px;
+  padding: 12px 16px;
+  gap: 18px;
+  color: #fff;
+  text-align: left;
+  background: linear-gradient(110deg, rgba(0, 48, 165, .96), rgba(14, 94, 216, .92));
+  border: 1px solid rgba(161, 205, 255, .75);
+  border-radius: 9px;
+  box-shadow: 0 6px 18px rgba(0, 35, 119, .24), inset 0 1px 0 rgba(255, 255, 255, .25);
+  cursor: pointer;
+  transition: transform .16s ease, filter .16s ease, box-shadow .16s ease;
+}
+
+.profileCard:hover { filter: brightness(1.1); transform: translateY(-2px); box-shadow: 0 10px 22px rgba(0, 35, 119, .32), inset 0 1px 0 rgba(255, 255, 255, .3); }
+.profileCard:active { transform: translateY(1px) scale(.99); filter: brightness(.96); }
+.profileCard:focus-visible, .restart:focus-visible { outline: 3px solid #fff37a; outline-offset: 4px; }
+.avatarFrame { flex: 0 0 76px; width: 76px; height: 76px; padding: 4px; background: #ffcf00; border-radius: 7px; box-shadow: 0 1px 5px rgba(0, 0, 0, .4); }
+.avatar { width: 100%; height: 100%; object-fit: cover; border-radius: 3px; background: #d8e8ff; }
+.profileCopy { display: flex; min-width: 0; flex-direction: column; gap: 3px; }
+.profileName { font-size: clamp(1.05rem, 2.2vw, 1.55rem); font-weight: 700; }
+.profileRole { color: #ffda32; font-size: clamp(.78rem, 1.4vw, 1rem); font-weight: 700; }
+.enterArrow { margin-left: auto; font-size: 2.5rem; line-height: 1; opacity: .85; }
+
+.footer {
+  display: flex;
+  min-height: 74px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px clamp(18px, 4vw, 54px);
+  background:
+    linear-gradient(rgba(0, 12, 80, .12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 12, 80, .12) 1px, transparent 1px),
+    linear-gradient(100deg, #001b83, #0037b7 55%, #001a7b);
+  background-size: 4px 4px, 4px 4px, auto;
+  border-top: 3px solid rgba(194, 220, 255, .7);
+  box-shadow: 0 -3px 12px rgba(0, 28, 112, .22);
+}
+
+.restart { display: inline-flex; align-items: center; gap: 10px; padding: 4px; color: #fff; font-size: 1rem; font-weight: 600; text-shadow: 0 1px 2px rgba(0,0,0,.35); cursor: pointer; }
+.restartIcon { display: grid; place-items: center; width: 34px; height: 34px; color: #fff; font-size: 27px; font-weight: 700; line-height: 1; background: linear-gradient(145deg, #70d55f, #13822d); border: 1px solid #aaf092; border-radius: 6px; box-shadow: inset 0 1px 2px rgba(255,255,255,.75), 0 1px 4px rgba(0,0,0,.3); }
+.footerMessage { font-size: .95rem; font-weight: 600; text-align: right; text-shadow: 0 1px 2px rgba(0,0,0,.35); }
+
+@keyframes welcome-in { from { opacity: 0; transform: translateY(12px) scale(.97); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@keyframes selection-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 680px) {
+  .topBar { height: clamp(58px, 12vh, 96px); }
+  .selection { grid-template-columns: 1fr; align-content: center; gap: 8px; width: min(460px, calc(100% - 32px)); padding: 16px 0; }
+  .brand { flex-direction: row; gap: 14px; padding: 6px 8px 18px; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.32); text-align: left; }
+  .windowsLogo { width: 72px; height: 72px; }
+  .brandCopy { align-items: flex-start; margin: 0; }
+  .brandName { font-size: clamp(1.35rem, 6vw, 2rem); }
+  .brandSubtitle { font-size: .9rem; }
+  .loginContent { gap: 14px; padding: 18px 4px 6px; }
+  .profileCard { min-height: 92px; gap: 12px; padding: 10px; }
+  .avatarFrame { flex-basis: 64px; width: 64px; height: 64px; }
+  .footer { min-height: 68px; gap: 8px; padding: 10px 14px; }
+  .restart { gap: 7px; font-size: .84rem; }
+  .restartIcon { width: 30px; height: 30px; font-size: 23px; }
+  .footerMessage { max-width: 45%; font-size: .76rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .welcome, .selection { animation: none; }
+  .profileCard { transition: none; }
+}

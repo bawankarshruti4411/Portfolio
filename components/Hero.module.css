@@ -1,0 +1,264 @@
+/* Hero.module.css — Welcome window content */
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--xp-window-bg);
+  overflow: hidden;
+}
+
+/* ── Profile strip ── */
+.profileStrip {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 18px 14px;
+  background: linear-gradient(135deg, #dde8f8 0%, #eceaf2 100%);
+  border-bottom: 1px solid #b8b4ac;
+  flex-shrink: 0;
+}
+
+.avatarWrap {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  position: relative;
+  border: 2px solid;
+  border-color: #fff #808080 #808080 #fff;
+  background: #c8d8f0;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+}
+
+.avatarFallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1247b0;
+  font-family: 'Tahoma', sans-serif;
+  background: linear-gradient(135deg, #c8d8f0, #a8c0e8);
+}
+
+.profileInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.profileName {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  color: #000;
+  line-height: 1.2;
+  margin-bottom: 3px;
+}
+
+.profileRole {
+  font-size: 13px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.profileMeta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  color: #444;
+  flex-wrap: wrap;
+}
+
+.statusPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #e0f4e0;
+  border: 1px solid #80c880;
+  border-radius: 10px;
+  padding: 1px 8px;
+  font-size: 11px;
+  color: #1a6e1a;
+  font-weight: bold;
+}
+
+.statusDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--neon-green);
+  box-shadow: 0 0 4px var(--neon-green);
+  flex-shrink: 0;
+}
+
+/* ── Tagline ── */
+.taglineBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 12px 18px 10px;
+  background: #f4f0e8;
+  border-bottom: 1px solid #c8c4bc;
+  flex-shrink: 0;
+}
+
+.taglineQuote {
+  font-size: 32px;
+  line-height: 1;
+  color: #0058e6;
+  font-family: Georgia, serif;
+  margin-top: -4px;
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+.tagline {
+  font-size: 15px;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #333;
+  line-height: 1.5;
+  flex: 1;
+}
+
+/* ── Summary ── */
+.summarySection {
+  padding: 12px 18px;
+  flex-shrink: 0;
+  border-bottom: 1px solid #ddd8d0;
+}
+
+.summaryText {
+  font-size: 12px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* ── Stats (XP property rows) ── */
+.statsGroup {
+  padding: 8px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex-shrink: 0;
+  border-bottom: 1px solid #ddd8d0;
+}
+
+.statRow {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+  font-size: 12px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  border-bottom: 1px dotted #e0dcd4;
+}
+
+.statRow:last-child { border-bottom: none; }
+
+.statLabel {
+  flex: 1;
+  color: #555;
+}
+
+.statValue {
+  font-weight: bold;
+  color: #0058e6;
+  font-size: 13px;
+  background: #eef3ff;
+  padding: 1px 8px;
+  border: 1px solid;
+  border-color: #808080 #fff #fff #808080;
+  border-radius: 1px;
+  font-family: 'Tahoma', 'Courier New', monospace;
+}
+
+/* ── CTA buttons ── */
+.ctaRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+.xpBtn {
+  display: inline-flex;
+  align-items: center;
+  background: var(--xp-btn-bg);
+  border: 1px solid;
+  border-color: #fff #808080 #808080 #fff;
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,0.8),
+              inset -1px -1px 0 rgba(0,0,0,0.15);
+  padding: 5px 16px;
+  font-size: 12px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  cursor: pointer;
+  color: #000;
+  border-radius: 2px;
+  transition: background var(--duration-fast);
+  user-select: none;
+}
+
+.xpBtn:hover { background: #e0dcd4; }
+
+.xpBtn:active {
+  border-color: #808080 #fff #fff #808080;
+  box-shadow: inset 1px 1px 2px rgba(0,0,0,0.18);
+}
+
+.xpBtnPrimary {
+  background: linear-gradient(to bottom, #4488ee, #0058e6);
+  color: #fff;
+  border-color: #88aaee #003399 #003399 #88aaee;
+  font-weight: bold;
+}
+
+.xpBtnPrimary:hover {
+  background: linear-gradient(to bottom, #5599ff, #1166ee);
+  color: #fff;
+}
+
+/* ── Status bar ── */
+.statusBar {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  height: 22px;
+  background: var(--xp-statusbar-bg);
+  border-top: 1px solid #808080;
+  padding: 0 3px;
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+.statusSection {
+  height: 18px;
+  line-height: 18px;
+  padding: 0 6px;
+  font-size: 11px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  border: 1px solid;
+  border-color: #808080 #fff #fff #808080;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  min-width: 0;
+}

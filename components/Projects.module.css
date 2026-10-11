@@ -1,0 +1,341 @@
+/* Projects.module.css — Windows Explorer style */
+
+.explorer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--xp-window-bg);
+  overflow: hidden;
+}
+
+/* ── Toolbar ── */
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: var(--xp-menubar-bg);
+  border-bottom: 1px solid #808080;
+  padding: 3px 6px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.toolBtn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 10px;
+  font-size: 11px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  background: var(--xp-btn-bg);
+  border: 1px solid;
+  border-color: #fff #808080 #808080 #fff;
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,0.6);
+  cursor: pointer;
+  border-radius: 2px;
+  height: 24px;
+  color: #000;
+  white-space: nowrap;
+}
+
+.toolBtn:disabled {
+  color: #808080;
+  cursor: default;
+}
+
+.toolBtn:not(:disabled):hover { background: #e0dcd4; }
+
+.toolBtn:not(:disabled):active {
+  border-color: #808080 #fff #fff #808080;
+  box-shadow: inset 1px 1px 2px rgba(0,0,0,0.18);
+}
+
+.toolSep {
+  width: 1px;
+  height: 22px;
+  background: linear-gradient(to bottom, #808080, #808080);
+  border-right: 1px solid #fff;
+  margin: 0 4px;
+}
+
+/* ── Address bar ── */
+.addressBar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--xp-menubar-bg);
+  border-bottom: 1px solid #808080;
+  padding: 3px 6px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.addressLabel {
+  font-size: 11px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+}
+
+.addressBox {
+  flex: 1;
+  height: 20px;
+  line-height: 20px;
+  background: #fff;
+  border: 1px solid;
+  border-color: #808080 #fff #fff #808080;
+  padding: 0 6px;
+  font-size: 11px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.goBtn {
+  padding: 2px 8px;
+  height: 20px;
+  font-size: 11px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  background: var(--xp-btn-bg);
+  border: 1px solid;
+  border-color: #fff #808080 #808080 #fff;
+  cursor: pointer;
+  color: #000;
+  border-radius: 2px;
+}
+
+.goBtn:hover { background: #e0dcd4; }
+
+/* ── Main explorer area ── */
+.explorerMain {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* ── Sidebar (file list) ── */
+.sidebar {
+  width: 200px;
+  flex-shrink: 0;
+  background: #fff;
+  border-right: 1px solid #c8c4bc;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sidebarHeader {
+  font-size: 11px;
+  font-weight: bold;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  color: #0058e6;
+  padding: 8px 10px 4px;
+  border-bottom: 1px solid #e0dcd4;
+  flex-shrink: 0;
+  background: linear-gradient(to right, #e8f0ff, #fff);
+}
+
+.fileList {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.fileItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  color: #000;
+  cursor: pointer;
+  border-bottom: 1px solid #f0ede5;
+  line-height: 1.3;
+  user-select: none;
+}
+
+.fileItem:hover:not(.fileSelected) {
+  background: #eef3ff;
+}
+
+.fileSelected {
+  background: #0058e6;
+  color: #fff;
+}
+
+.fileIcon { flex-shrink: 0; }
+.fileName { word-break: break-word; }
+
+/* ── Divider ── */
+.divider {
+  width: 3px;
+  background: var(--xp-btn-bg);
+  border-left: 1px solid #808080;
+  border-right: 1px solid #fff;
+  cursor: col-resize;
+  flex-shrink: 0;
+}
+
+/* ── Detail pane ── */
+.detailPane {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.detailHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 16px 12px;
+  background: linear-gradient(135deg, #dde8f8 0%, #f4f4f4 100%);
+  border-bottom: 1px solid #c8c4bc;
+  flex-shrink: 0;
+}
+
+.detailIcon { font-size: 32px; margin-top: 2px; }
+
+.detailTitle {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  color: #000;
+  line-height: 1.3;
+  margin-bottom: 3px;
+}
+
+.detailMeta {
+  font-size: 11px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  color: #666;
+}
+
+.detailBody {
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ── Metric badge ── */
+.metricBadge {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  background: linear-gradient(135deg, #0058e6, #3a9ef5);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 3px;
+  border: 1px solid #0044bb;
+  box-shadow: 1px 2px 4px rgba(0,0,100,0.25);
+  align-self: flex-start;
+}
+
+.metricVal {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  letter-spacing: -0.5px;
+}
+
+.metricLab {
+  font-size: 12px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  opacity: 0.9;
+}
+
+/* ── Detail sections ── */
+
+
+.detailSectionLabel {
+  font-size: 11px;
+  font-weight: bold;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+
+.detailDesc {
+  font-size: 12px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* ── Tags ── */
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  background: #f0ede5;
+  border: 1px solid;
+  border-color: #fff #808080 #808080 #fff;
+  padding: 2px 8px;
+  color: #000;
+  border-radius: 2px;
+}
+
+/* ── Open button ── */
+.openBtn {
+  display: inline-flex;
+  align-items: center;
+  background: var(--xp-btn-bg);
+  border: 1px solid;
+  border-color: #fff #808080 #808080 #fff;
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,0.8);
+  padding: 5px 14px;
+  font-size: 12px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  cursor: pointer;
+  color: #000;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: background var(--duration-fast);
+}
+
+.openBtn:hover { background: #e0dcd4; color: #000; }
+
+/* ── Status bar ── */
+.statusBar {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  height: 22px;
+  background: var(--xp-statusbar-bg);
+  border-top: 1px solid #808080;
+  padding: 0 3px;
+  flex-shrink: 0;
+}
+
+.statusSection {
+  height: 18px;
+  line-height: 18px;
+  padding: 0 6px;
+  font-size: 11px;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  border: 1px solid;
+  border-color: #808080 #fff #fff #808080;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  min-width: 0;
+}

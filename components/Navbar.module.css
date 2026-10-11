@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Navbar.module.css - Scrapbook Navigation
+   ========================================================================== */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: transparent;
+  transition: background var(--duration-base) ease, border-color var(--duration-base) ease;
+}
+
+.navbarScrolled {
+  background: rgba(20, 19, 18, 0.9);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+}
+
+.navInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-sm);
+  padding-bottom: var(--space-sm);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* Handwritten initials circle */
+.brandMark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px dashed var(--color-accent);
+  color: var(--color-accent);
+  font-family: var(--font-handwriting);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.brandName {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  color: var(--color-text-primary);
+  text-transform: uppercase;
+}
+
+.navList {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.navLink {
+  font-family: var(--font-handwriting);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  transition: color var(--duration-fast) ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.navLink:hover {
+  color: var(--color-accent);
+  transform: rotate(-2deg) scale(1.05);
+}
+
+/* Masking Tape CTA button */
+.navCta {
+  font-family: var(--font-handwriting);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2b3a1a;
+  background-color: var(--color-tape);
+  padding: 0.3rem 1.1rem;
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
+  clip-path: polygon(
+    0% 10%, 5% 0%, 95% 5%, 100% 15%,
+    98% 85%, 94% 100%, 6% 92%, 0% 80%
+  );
+  transition: transform var(--duration-fast) var(--ease-spring), background-color var(--duration-fast) ease;
+  transform: rotate(2deg);
+}
+
+.navCta:hover {
+  transform: rotate(-1deg) scale(1.05);
+  background-color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .navList {
+    display: none;
+  }
+}
