@@ -389,7 +389,7 @@ export const certificates = [
   issueDate: 'July 2026',
   credentialId: 'ATCPL-26-27/Cert./226',
   verifyUrl: '',
-  image: '/aarkay-internship.pdf',
+  image: '/aarkay-internship.png',
   skills: [
     'Software Development',
     'Backend Development',
@@ -401,32 +401,44 @@ export const certificates = [
   summary:
     'Successfully completed an internship at Aarkay Techno Consultants Pvt. Ltd. from May 20 to June 30, 2026, working on various project modules under professional guidance and demonstrating dedication, focus, and a strong work ethic.',
 },
-  {
-    id: 'cert-03',
-    title: 'IBM Data Science & Machine Learning Specialization',
-    issuer: 'IBM',
-    category: 'Machine Learning',
-    issueDate: 'November 2023',
-    credentialId: 'IBM-DS-774012',
-    verifyUrl: 'https://coursera.org/verify/ibm-ds',
-    image: '/project_viz.png',
-    skills: ['Python', 'Pandas', 'Scikit-learn', 'Predictive Modeling', 'Machine Learning'],
-    summary:
-      'Hands-on mastery of predictive modeling, supervised and unsupervised machine learning algorithms, and real-world applied data science pipelines.',
-  },
-  {
-    id: 'cert-04',
-    title: 'SQL (Advanced) Certification',
-    issuer: 'HackerRank',
-    category: 'Databases',
-    issueDate: 'August 2023',
-    credentialId: 'HR-SQL-ADV-9932',
-    verifyUrl: 'https://www.hackerrank.com/certificates',
-    image: '/project_viz.png',
-    skills: ['Complex Joins', 'Window Functions', 'Subqueries', 'Query Optimization', 'CTE'],
-    summary:
-      'Demonstrated advanced problem solving in SQL including multi-table analytics, temporal windowing, recursive CTEs, and aggregate functions.',
-  },
+ {
+  id: 'cert-03',
+  title: 'Global Immersion Program',
+  issuer: 'Asian Institute of Technology (AIT), Thailand',
+  category: 'International Education',
+  issueDate: 'September 2025',
+  credentialId: '',
+  verifyUrl: '',
+  image: '/global-immersion-ait.png',
+  skills: [
+    'Cross-Cultural Communication',
+    'Global Exposure',
+    'Intercultural Collaboration',
+    'Adaptability',
+    'International Learning'
+  ],
+  summary:
+    'Successfully completed the Global Immersion Program at the Asian Institute of Technology (AIT), Thailand, from September 8–14, 2025, representing Symbiosis Institute of Technology, Nagpur.',
+},
+ {
+  id: 'cert-04',
+  title: 'Data Science Summer School 2025',
+  issuer: 'Hertie School Data Science Lab (DS3)',
+  category: 'Data Science',
+  issueDate: 'August 2025',
+  credentialId: '',
+  verifyUrl: '',
+  image: '/data-science-summer-school.png',
+  skills: [
+    'Data Science',
+    'Data Analysis',
+    'Statistical Thinking',
+    'Machine Learning',
+    'Data-Driven Problem Solving'
+  ],
+  summary:
+    'Certificate of participation recognizing active participation in the Data Science Summer School 2025, organized by DS3 and the Hertie School Data Science Lab from August 4–8, 2025.',
+},
   {
     id: 'cert-05',
     title: 'Python for Data Science Bootcamp',
