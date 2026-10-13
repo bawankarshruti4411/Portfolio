@@ -1,9 +1,3 @@
-// ==========================================================================
-// siteData.js
-// EDIT THIS FILE to change any text, links, or content on the site.
-// Nothing here is hardcoded into components — they all import from here.
-// ==========================================================================
-
 export const profile = {
   name: 'Shruti Bawankar',
   initials: 'SB',
@@ -388,18 +382,25 @@ export const certificates = [
     'Completion certificate from AWS Training & Certification for the Foundations of Prompt Engineering course, completed on April 26, 2026.'
 },
   {
-    id: 'cert-02',
-    title: 'Microsoft Certified: Power BI Data Analyst Associate',
-    issuer: 'Microsoft',
-    category: 'Business Intelligence',
-    issueDate: 'March 2024',
-    credentialId: 'MS-PL300-883921',
-    verifyUrl: 'https://learn.microsoft.com/credentials/',
-    image: '/project_viz.png',
-    skills: ['Power BI', 'DAX', 'Power Query', 'Data Modeling', 'Interactive Dashboards'],
-    summary:
-      'Validated proficiency in transforming business requirements into meaningful visual reports, star schema design, and DAX calculations.',
-  },
+  id: 'cert-02',
+  title: 'Internship Completion Certificate',
+  issuer: 'Aarkay Techno Consultants Pvt. Ltd.',
+  category: 'Software Development',
+  issueDate: 'July 2026',
+  credentialId: 'ATCPL-26-27/Cert./226',
+  verifyUrl: '',
+  image: '/aarkay-internship.pdf',
+  skills: [
+    'Software Development',
+    'Backend Development',
+    'API Development',
+    'Problem Solving',
+    'Teamwork',
+    'Technical Project Development'
+  ],
+  summary:
+    'Successfully completed an internship at Aarkay Techno Consultants Pvt. Ltd. from May 20 to June 30, 2026, working on various project modules under professional guidance and demonstrating dedication, focus, and a strong work ethic.',
+},
   {
     id: 'cert-03',
     title: 'IBM Data Science & Machine Learning Specialization',
