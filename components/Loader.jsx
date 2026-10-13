@@ -121,7 +121,7 @@ export default function Loader({ onComplete }) {
           Copyright © Shruti Bawankar
         </div>
         <div className={styles.microsoftLogo}>
-          Microsoft<span className={styles.regSmall}>®</span>
+          Portfolio<span className={styles.regSmall}>®</span>
         </div>
       </div>
     </div>
