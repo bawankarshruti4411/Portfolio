@@ -472,6 +472,64 @@ export const certificates = [
   summary:
     'Completed Tata’s Cybersecurity Analyst Job Simulation on Forage on March 29, 2026, covering IAM fundamentals, IAM strategy assessment, custom IAM solutions, and platform integration.',
 },
+  {
+  id: 'cert-08',
+  title: 'AI Fluency: Framework & Foundations',
+  issuer: 'Anthropic',
+  category: 'Artificial Intelligence',
+  issueDate: '',
+  credentialId: '',
+  verifyUrl: '',
+  image: '/certificates/ai-fluency-foundations.png',
+  skills: [
+    'AI Fluency',
+    'Generative AI',
+    'AI Literacy',
+    'Prompt Engineering',
+    'Responsible AI'
+  ],
+  summary:
+    'Completed Anthropic’s AI Fluency: Framework & Foundations program, developing foundational understanding of AI fluency and effective engagement with AI systems.',
+},
+  {
+  id: 'cert-09',
+  title: 'Mastering Agentic AI: From Prompt to Protocols to Production',
+  issuer: 'Udemy',
+  category: 'Agentic AI',
+  issueDate: 'July 2026',
+  credentialId: 'UC-66780d44-4c2d-470a-a693-12c3943dabe8',
+  verifyUrl: 'https://ude.my/UC-66780d44-4c2d-470a-a693-12c3943dabe8',
+  image: '/certificates/mastering-agentic-ai.png',
+  skills: [
+    'Agentic AI',
+    'Prompt Engineering',
+    'AI Agents',
+    'AI Protocols',
+    'AI Application Development',
+    'Production Deployment'
+  ],
+  summary:
+    'Completed the 38-hour course Mastering Agentic AI: From Prompt to Protocols to Production, instructed by Vinit Singh, on July 21, 2026.',
+},
+  {
+  id: 'cert-10',
+  title: 'The Crypto Heist CTF',
+  issuer: 'ThunderCipher',
+  category: 'Cybersecurity',
+  issueDate: 'July 2026',
+  credentialId: '',
+  verifyUrl: '',
+  image: '/certificates/crypto-heist-ctf.png',
+  skills: [
+    'Capture the Flag (CTF)',
+    'Cryptography',
+    'Cybersecurity',
+    'Problem Solving',
+    'Analytical Thinking'
+  ],
+  summary:
+    'Participated in The Crypto Heist Capture the Flag (CTF), organized by ThunderCipher on July 18, 2026, demonstrating engagement in practical cybersecurity challenges.',
+},
 ];
 
 // ==========================================================================
