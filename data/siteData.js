@@ -440,31 +440,60 @@ export const certificates = [
     'Certificate of participation recognizing active participation in the Data Science Summer School 2025, organized by DS3 and the Hertie School Data Science Lab from August 4–8, 2025.',
 },
   {
-    id: 'cert-05',
-    title: 'Python for Data Science Bootcamp',
-    issuer: 'Udemy / Tech Academy',
-    category: 'Programming',
-    issueDate: 'June 2023',
-    credentialId: 'UDE-PYDS-44109',
-    verifyUrl: 'https://www.udemy.com/certificate/',
-    image: '/project_viz.png',
-    skills: ['Python 3', 'NumPy', 'Pandas', 'Matplotlib', 'Seaborn', 'Data Wrangling'],
-    summary:
-      'Intensive immersion in data manipulation, exploratory analysis, cleaning non-standard datasets, and building reusable script libraries.',
-  },
+  id: 'cert-05',
+  title: 'Data Analytics Job Simulation',
+  issuer: 'Deloitte (via Forage)',
+  category: 'Data Analytics',
+  issueDate: 'March 2026',
+  credentialId: '69c7b28a9fc323c8024a48a9',
+  verifyUrl: 'https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_69c7b28a9fc323c8024a48a9_1774708412445_completion_certificate.pdf',
+  image: '/deloitte-data-analytics.png',
+  skills: [
+    'Data Analysis',
+    'Forensic Technology',
+    'Analytical Thinking',
+    'Problem Solving'
+  ],
+  summary:
+    'Completed Deloitte’s Data Analytics Job Simulation on Forage in March 2026, undertaking practical tasks in data analysis and forensic technology.',
+},
   {
-    id: 'cert-06',
-    title: 'Cybersecurity Fundamentals & Threat Analysis',
-    issuer: 'Cisco Networking Academy',
-    category: 'Cybersecurity',
-    issueDate: 'May 2023',
-    credentialId: 'CSCO-CYBER-1029',
-    verifyUrl: 'https://www.netacad.com/',
-    image: '/project_viz.png',
-    skills: ['Network Security', 'Event Logging', 'Threat Detection', 'Data Protection'],
-    summary:
-      'Foundational understanding of security principles, network traffic monitoring, defensive measures, and secure code practices.',
-  },
+  id: 'cert-06',
+  title: 'Cyber Job Simulation',
+  issuer: 'Deloitte (via Forage)',
+  category: 'Cybersecurity',
+  issueDate: 'March 2026',
+  credentialId: '69c7b28a9fc323c8024a48a9',
+  verifyUrl: 'https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_69c7b28a9fc323c8024a48a9_1774708414336_completion_certificate.pdf',
+  image: '/deloitte-cyber.png',
+  skills: [
+    'Cybersecurity',
+    'Security Analysis',
+    'Threat Awareness',
+    'Problem Solving'
+  ],
+  summary:
+    'Completed Deloitte’s Cyber Job Simulation on Forage in March 2026, gaining practical exposure to cybersecurity-related tasks.',
+},
+  {
+  id: 'cert-07',
+  title: 'Cybersecurity Analyst Job Simulation',
+  issuer: 'Tata (via Forage)',
+  category: 'Cybersecurity',
+  issueDate: 'March 2026',
+  credentialId: '69c7b28a9fc323c8024a48a9',
+  verifyUrl: 'https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_69c7b28a9fc323c8024a48a9_1774786990790_completion_certificate.pdf',
+  image: '/tata-cybersecurity-analyst.png',
+  skills: [
+    'Identity and Access Management (IAM)',
+    'IAM Strategy',
+    'Custom IAM Solutions',
+    'Platform Integration',
+    'Access Control'
+  ],
+  summary:
+    'Completed Tata’s Cybersecurity Analyst Job Simulation on Forage on March 29, 2026, covering IAM fundamentals, IAM strategy assessment, custom IAM solutions, and platform integration.',
+},
 ];
 
 // ==========================================================================
