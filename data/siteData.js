@@ -548,7 +548,6 @@ export const contributions = [
     summary:
       'Coordinate cybersecurity awareness activities, technical events, and collaborative learning initiatives for students.',
     keyImpacts: [
-      'Organised 11 events till now.',
       'Support cybersecurity-focused student engagement and learning.',
       'Contribute to planning and coordination of technical activities.',
       'Help promote responsible digital behaviour and security awareness.',
@@ -589,7 +588,7 @@ export const contributions = [
     role: 'Cyber Guardian Club Coordinator',
     organization: 'Cyber Guardian Club, SIT Nagpur',
     period: 'September 2026',
-    type: 'Cybersecurity Events',
+    type: 'Events & Summits',
     location: 'Nagpur, India',
     summary:
       'Contributed to an interactive cybersecurity challenge featuring riddles, physical clues, and team-based problem-solving.',
@@ -605,7 +604,74 @@ export const contributions = [
       'Problem Solving',
     ],
   },
+  {
+    id: 'contrib-04',
+    title: 'ICSIT 2025',
+    role: 'Convention Hall Technical Head & Coordinator',
+    organization: 'Symbiosis Institute of Technology, Nagpur',
+    period: 'Aug 2025',
+    type: 'Volunteering',
+    location: 'Nagpur, India',
+    summary:
+      'Volunteered as Convention Hall Technical Head and Coordinator, supporting technical arrangements and coordination to help ensure smooth event operations.',
+    keyImpacts: [
+      'Handled technical responsibilities for the convention hall.',
+      'Coordinated event-related technical requirements and arrangements.',
+      'Supported smooth execution of activities in the convention hall.',
+    ],
+    tags: [
+      'Technical Support',
+      'Event Coordination',
+      'Leadership',
+      'Troubleshooting',
+    ],
+  },
+  {
+    id: 'contrib-05',
+    title: 'Sports Spectra 2.0',
+    role: 'Sports Volunteer – Futsal Court',
+    organization: 'Symbiosis Institute of Technology, Nagpur',
+    period: 'Oct 2024',
+    type: 'Volunteering',
+    location: 'Nagpur, India',
+    summary:
+      'Volunteered during Sports Spectra 2.0, handling futsal court responsibilities and supporting the smooth conduct of sports activities.',
+    keyImpacts: [
+      'Managed assigned responsibilities at the futsal court.',
+      'Supported coordination of court activities during the event.',
+      'Helped maintain organized operations in the designated sports area.',
+    ],
+    tags: [
+      'Sports Management',
+      'Volunteering',
+      'Coordination',
+      'Teamwork',
+    ],
+  },
+  {
+    id: 'contrib-06',
+    title: 'Sports Spectra 4.0',
+    role: 'Sports Volunteer – Futsal Court',
+    organization: 'Symbiosis Institute of Technology, Nagpur',
+    period: 'Oct 2026',
+    type: 'Volunteering',
+    location: 'Nagpur, India',
+    summary:
+      'Volunteered during Sports Spectra 4.0, taking responsibility for futsal court operations and assisting with event coordination.',
+    keyImpacts: [
+      'Handled assigned futsal court responsibilities.',
+      'Assisted with coordination of sports activities and court operations.',
+      'Contributed to an organized experience for participants.',
+    ],
+    tags: [
+      'Sports Management',
+      'Volunteering',
+      'Coordination',
+      'Teamwork',
+    ],
+  },
 ];
+
 
 
 // ==========================================================================
