@@ -409,7 +409,7 @@ export const certificates = [
   issueDate: 'September 2025',
   credentialId: '',
   verifyUrl: '',
-  image: '/global-immersion-ait.png',
+  image: '/global-immersion-ait.jpg',
   skills: [
     'Cross-Cultural Communication',
     'Global Exposure',
@@ -428,7 +428,7 @@ export const certificates = [
   issueDate: 'August 2025',
   credentialId: '',
   verifyUrl: '',
-  image: '/data-science-summer-school.png',
+  image: '/data-science-summer-school.jpg',
   skills: [
     'Data Science',
     'Data Analysis',
