@@ -122,7 +122,7 @@ export const heroContent = {
   stats: [
     { value: '04', label: 'Featured Projects' },
     { value: '01', label: 'Industry Internship' },
-    { value: '06', label: ' Certifications & Training' },
+    { value: '10', label: ' Certifications & Training' },
   ],
 };
 
