@@ -120,7 +120,7 @@ export const heroContent = {
   primaryCta: { label: 'View Projects', href: '#projects' },
   secondaryCta: { label: 'Get in touch', href: '#contact' },
   stats: [
-    { value: '04', label: 'Featured Projects' },
+    { value: '03', label: 'Featured Projects' },
     { value: '01', label: 'Industry Internship' },
     { value: '06', label: ' Certifications & Training' },
   ],
@@ -184,39 +184,28 @@ export const aboutContent = {
 export const projects = [
   {
     id: 'proj-01',
-    title: 'Scholarship Eligibility Prediction Model',
+    title: 'Conference Deadline Monitoring Agent',
     summary:
-      'Built a machine learning system that predicts student scholarship eligibility using a Random Forest classifier trained on 15,000 student records, with SHAP-based explainability and batch prediction support.',
-    tags: ['Python', 'Scikit-learn', 'Random Forest','SHAP','Flask'],
-    metric: { value: '97.63%', label: 'model accuracy' },
-    link: 'https://scholarship-elegibility-frontend.vercel.app/',
+      'Developed an AI-powered research assistant that searches the web for relevant academic conferences, analyzes their relevance using Groq, and tracks submission deadlines with personalized recommendations.',
+    tags: ['Python', 'Flask', 'Groq', 'Tavily', 'AI', 'Web Search'],
+    metric: { value: 'AI', label: 'conference research assistant' },
+    link: 'https://ai-conference-deadline-tracker.onrender.com/',
   },
   {
     id: 'proj-02',
-    title: 'Keylogger',
+    title: 'Login Hierarchy Management API',
     summary:
-      'Developed a Python-based cybersecurity project that monitors keyboard events using pynput and records key press, hold, and release activities in structured JSON and text log files through a Tkinter interface.',
-    tags: ['Python', 'Tkinter', 'Pynput','Cybersecurity'],
-    metric: { value: '3', label: 'event types logged' },
-    link: 'https://github.com/bawankarshruti4411/Keylogger',
+      'Developed and tested a Flask backend API implementing authentication, authorization, and role-based access control (RBAC) with MySQL integration.',
+    tags: ['Python', 'Flask', 'MySQL', 'REST APIs', 'Authentication', 'RBAC'],
+    link: 'https://loginhierarchymanagementapi.onrender.com',
+    sourceUrl: 'https://github.com/bawankarshruti4411/LoginHierarchyManagementAPI',
   },
   {
-  id: 'proj-03',
-  title: 'Conference Deadline Monitoring Agent',
-  summary:
-    'Developed an AI-powered research assistant that searches the web for relevant academic conferences, analyzes their relevance using Groq, and tracks important submission deadlines with personalized recommendations.',
-  tags: ['Python', 'Flask', 'Groq', 'Tavily', 'AI', 'Web Search'],
-  metric: { value: '4', label: 'step AI workflow' },
-  link: 'https://ai-conference-deadline-tracker.onrender.com/',
-},
-  {
-    id: 'proj-04',
-    title: 'A/B Testing Framework for SaaS Onboarding',
+    id: 'proj-03',
+    title: 'Manufacturing Defect Pattern Mining',
     summary:
-      'Built an internal experimentation framework with automatic significance checks, run by product teams without analyst involvement.',
-    tags: ['SQL', 'Statistics', 'Python'],
-    metric: { value: '30+', label: 'experiments run' },
-    link: '#',
+      'Developed a machine learning application to identify manufacturing defect patterns and predict whether products are defective or non-defective, with a web interface for submitting product data and viewing predictions.',
+    tags: ['Python', 'Machine Learning', 'HTML', 'CSS', 'JavaScript'],
   },
 ];
 
@@ -225,7 +214,7 @@ export const faqItems = [
     id: 'faq-01',
     question: 'What kind of projects do you work on?',
     answer:
-      'Mostly analytics dashboards, churn and forecasting models, ETL pipeline cleanup, and A/B testing frameworks — anything where a business needs to trust a number before acting on it.I build practical projects across backend development, data science, AI, and cybersecurity. My work includes REST APIs, database-backed applications, machine learning solutions, and AI-powered applications such as my Conference Deadline Monitoring Agent and Manufacturing Defect Pattern Mining project.',
+      'I build practical projects across backend development, data science, AI, and cybersecurity. My work includes REST APIs, database-backed applications, machine learning solutions, and AI-powered applications such as my Conference Deadline Monitoring Agent and Manufacturing Defect Pattern Mining project.',
   },
   {
     id: 'faq-02',
@@ -548,7 +537,6 @@ export const contributions = [
     summary:
       'Coordinate cybersecurity awareness activities, technical events, and collaborative learning initiatives for students.',
     keyImpacts: [
-      'Organised 11 events till now.',
       'Support cybersecurity-focused student engagement and learning.',
       'Contribute to planning and coordination of technical activities.',
       'Help promote responsible digital behaviour and security awareness.',
@@ -628,7 +616,7 @@ export const gallery = [
     id: 'photo-02',
     title: 'Global Immersion Program Essentials',
     category: 'Global Immersion Program',
-    date: 'September 2026',
+    date: 'September 2025',
     location: 'AIT, Thailand',
     caption:
       'A collection of program essentials, including the AIT participant ID card, study tour materials, notebook, and souvenirs received during the international academic program.',
