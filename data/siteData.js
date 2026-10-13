@@ -267,97 +267,75 @@ export const footerContent = {
 // ==========================================================================
 // 🏆 ACHIEVEMENTS DATA
 // ==========================================================================
+
 export const achievements = [
   {
     id: 'ach-01',
-    title: '1st Place — State-Level Machine Learning Datathon',
-    category: 'Hackathons',
-    badge: '🏆',
-    rank: 'Winner (1st / 65 Teams)',
-    organization: 'Inter-College Tech Conclave & CSI',
-    date: 'March 2024',
-    metric: { value: '97.6%', label: 'prediction accuracy' },
+    title: 'Global Immersion Program — AIT Thailand',
+    category: 'International Education',
+    badge: '🌏',
+    rank: 'Program Completed',
+    organization: 'Asian Institute of Technology (AIT)',
+    date: 'September 2025',
+    metric: { value: '7 Days', label: 'international program' },
     summary:
-      'Engineered an interpretable machine learning pipeline for student scholarship eligibility prediction with automated feature selection and SHAP explainability.',
+      'Completed a 7-day international immersion program combining academic learning, industry exposure, cultural exploration, and international networking.',
     highlights: [
-      'Processed 15,000+ student academic and demographic data points.',
-      'Constructed Random Forest and Gradient Boosted models evaluated under 5-fold cross-validation.',
-      'Delivered live dashboard demonstration and won unanimous jury acclaim for interpretability.',
+      'Attended academic sessions on AI, FinTech, ESG, and sustainable business practices.',
+      'Visited Ichitan Group to observe automated manufacturing and warehouse operations.',
+      'Developed a broader global perspective through cross-cultural learning and collaboration.',
     ],
     verified: true,
   },
   {
     id: 'ach-02',
-    title: 'Top 5 Finalist — Smart India Hackathon (College Prelims)',
+    title: 'Runner-up — Hacksphere 2.0',
     category: 'Hackathons',
-    badge: '🥇',
-    rank: 'Top 5 Finalist',
-    organization: 'Ministry of Education Innovation Cell & AICTE',
-    date: 'October 2023',
-    metric: { value: 'Top 5', label: 'out of 120+ teams' },
+    badge: '🏆',
+    rank: 'Runner-up',
+    organization: 'Hacksphere 2.0',
+    date: '2025',
     summary:
-      'Designed a predictive hospital bed allocation and occupancy forecasting prototype for urban healthcare management.',
+      'Recognized as runner-up in the submission round of Hacksphere 2.0.',
     highlights: [
-      'Implemented real-time ARIMA time-series forecasting for seasonal patient surge anticipation.',
-      'Developed interactive desktop dashboards for medical superintendent monitoring.',
-      'Recognized for UI clarity and statistical robustness by industry evaluators.',
+      'Received runner-up recognition in the submission round.',
     ],
     verified: true,
   },
   {
     id: 'ach-03',
-    title: 'Academic Excellence Award — Faculty of Engineering',
-    category: 'Academics',
-    badge: '🎖️',
-    rank: 'Top 5% Merit Holder',
-    organization: 'Rashtrasant Tukadoji Maharaj Nagpur University',
-    date: '2023 – 2024',
-    metric: { value: '9.2 CGPA', label: 'consistent score' },
+    title: 'The Crypto Heist CTF',
+    category: 'Cybersecurity',
+    badge: '🔐',
+    rank: 'Participant',
+    organization: 'ThunderCipher',
+    date: 'July 2026',
     summary:
-      'Honored for outstanding academic performance in Data Structures, Database Systems, Statistics, and Data Science coursework.',
+      'Participated in a Capture the Flag challenge to practice cybersecurity concepts and problem-solving.',
     highlights: [
-      'Maintained consistent rank in top 5% of department cohort.',
-      'Subject topper in Applied Statistics & Relational Database Management Systems (RDBMS).',
-      'Awarded certificate of commendation from the Department Head.',
+      'Engaged with practical cybersecurity challenges.',
+      'Received a certificate of participation.',
     ],
     verified: true,
   },
   {
     id: 'ach-04',
-    title: 'Kaggle Notebooks & Datasets Distinction',
-    category: 'Analytics',
-    badge: '⭐',
-    rank: 'Active Contributor',
-    organization: 'Kaggle Data Science Community',
-    date: '2023 – Present',
-    metric: { value: '500+ Upvotes', label: 'community reach' },
+    title: 'AWS Community Day Nagpur',
+    category: 'Technical Events',
+    badge: '☁️',
+    rank: 'Participant',
+    organization: 'AWS Community Day Nagpur',
+    date: 'September 2026',
     summary:
-      'Published open exploratory data analysis notebooks covering exploratory analysis, customer churn prediction, and data cleaning techniques.',
+      'Participated in a technical community event exploring AWS, cloud technologies, and emerging developer practices.',
     highlights: [
-      'Authored clean, thoroughly commented step-by-step EDA notebooks.',
-      'Demonstrated data visualization pipelines with Seaborn, Matplotlib, and Plotly.',
-      'Earned bronze rankings in community data modeling discussions.',
-    ],
-    verified: true,
-  },
-  {
-    id: 'ach-05',
-    title: 'Best Technical Paper Presentation (Cybersecurity & Data Logs)',
-    category: 'Research',
-    badge: '📜',
-    rank: 'Best Paper Award',
-    organization: 'National Student Conference on Emerging Computing',
-    date: 'January 2024',
-    metric: { value: 'Peer Reviewed', label: 'conference track' },
-    summary:
-      'Presented technical research on behavioral event logging mechanisms, anomaly detection in keystroke dynamics, and forensic analysis.',
-    highlights: [
-      'Demonstrated the working mechanics of keystroke event capture and payload parsing.',
-      'Discussed data ethical considerations and modern endpoint detection systems.',
+      'Engaged with the cloud technology community.',
+      'Explored current industry topics and technical sessions.',
     ],
     verified: true,
   },
 ];
+
 
 // ==========================================================================
 // 📜 CERTIFICATES & CREDENTIALS DATA
@@ -499,76 +477,78 @@ export const certificates = [
 // ==========================================================================
 // 🤝 CONTRIBUTIONS & PARTICIPATION DATA
 // ==========================================================================
+
 export const contributions = [
   {
     id: 'contrib-01',
-    title: 'Data & Tech Lead — Google Developer Student Clubs (GDSC)',
-    role: 'Lead & Coordinator',
-    organization: 'GDSC Campus Chapter',
-    period: '2023 – 2024',
+    title: 'Cyber Guardian Club',
+    role: 'Coordinator',
+    organization: 'Symbiosis Institute of Technology, Nagpur',
+    period: 'July 2025 – Present',
     type: 'Clubs & Societies',
     location: 'Nagpur, India',
     summary:
-      'Led the technical track for data analytics, Python workshops, and open-source study jams for 200+ campus student developers.',
+      'Coordinate cybersecurity awareness activities, technical events, and collaborative learning initiatives for students.',
     keyImpacts: [
-      'Organized 4 hands-on workshops on Python, SQL, and Power BI with over 150 participants.',
-      'Mentored 10+ student teams during hackathon ideation and dataset preparation sprints.',
-      'Collaborated with fellow club leads to build an active peer learning ecosystem.',
+      'Organised 11 events till now.',
+      'Support cybersecurity-focused student engagement and learning.',
+      'Contribute to planning and coordination of technical activities.',
+      'Help promote responsible digital behaviour and security awareness.',
     ],
-    tags: ['Leadership', 'Workshops', 'Mentorship', 'Community Building'],
+    tags: [
+      'Cybersecurity',
+      'Leadership',
+      'Student Community',
+      'Event Coordination',
+    ],
   },
   {
     id: 'contrib-02',
-    title: 'Student Coordinator — Annual National Technical Symposium',
-    role: 'Event Lead',
-    organization: 'College Technical Council',
-    period: 'February 2024',
+    title: 'CodeSprint 2.0',
+    role: 'Student / Event Coordinator',
+    organization:
+      'Cyber Guardian Club and ACM Student Chapter, SIT Nagpur',
+    period: '2026',
     type: 'Events & Summits',
     location: 'Nagpur, India',
     summary:
-      'Headed student logistics, coding challenge platforms, and participant communication for the flagship inter-university tech fest.',
+      'Contributed to coordinating a competitive coding event that encouraged algorithmic thinking, programming practice, and collaboration.',
     keyImpacts: [
-      'Managed registration and live evaluation leaderboard for 350+ event attendees.',
-      'Designed technical quizzes and coding rounds covering algorithm design and SQL queries.',
-      'Ensured seamless coordination with faculty and corporate judges.',
+      'Supported coordination of a student-focused coding event.',
+      'Contributed to a platform for students to demonstrate programming skills.',
+      'Collaborated with student organizers from technical clubs.',
     ],
-    tags: ['Event Management', 'Hackathon Logistics', 'Problem Authoring'],
+    tags: [
+      'Coding',
+      'Event Coordination',
+      'Problem Solving',
+      'Collaboration',
+    ],
   },
   {
     id: 'contrib-03',
-    title: 'Volunteer Instructor — Coding & Digital Literacy for School Students',
-    role: 'Volunteer Mentor',
-    organization: 'NSS & Community Outreach Cell',
-    period: '2023',
-    type: 'Volunteering',
-    location: 'Nagpur Rural Schools',
+    title: 'Security Jeopardy',
+    role: 'Cyber Guardian Club Coordinator',
+    organization: 'Cyber Guardian Club, SIT Nagpur',
+    period: 'September 2026',
+    type: 'Cybersecurity Events',
+    location: 'Nagpur, India',
     summary:
-      'Conducted interactive basic computer literacy and introductory Python coding sessions for local secondary school students.',
+      'Contributed to an interactive cybersecurity challenge featuring riddles, physical clues, and team-based problem-solving.',
     keyImpacts: [
-      'Taught basic computational thinking and digital tools to 60+ underprivileged pupils.',
-      'Created visual worksheets and interactive quizzes to make programming engaging.',
-      'Commended by school administration and NSS program officer.',
+      'Supported an engaging, challenge-based cybersecurity learning experience.',
+      'Helped promote cybersecurity awareness among students.',
+      'Contributed to an event combining online clues and physical challenges.',
     ],
-    tags: ['Social Impact', 'Teaching', 'Digital Literacy'],
-  },
-  {
-    id: 'contrib-04',
-    title: 'Active Open Source & Kaggle Notebook Contributor',
-    role: 'Open Source Contributor',
-    organization: 'GitHub & Data Science Communities',
-    period: '2023 – Present',
-    type: 'Community',
-    location: 'Online',
-    summary:
-      'Actively releasing reproducible data analysis scripts, exploratory templates, and cybersecurity utility tools on GitHub.',
-    keyImpacts: [
-      'Maintained public repositories with clear documentation, requirements, and visual demos.',
-      'Shared data cleaning scripts and boilerplate templates used by peer developers.',
-      'Participated in code reviews and discussion threads.',
+    tags: [
+      'Cybersecurity Awareness',
+      'Event Coordination',
+      'Teamwork',
+      'Problem Solving',
     ],
-    tags: ['Open Source', 'GitHub', 'Documentation', 'Python'],
   },
 ];
+
 
 // ==========================================================================
 // 📸 PHOTOS / GALLERY DATA
