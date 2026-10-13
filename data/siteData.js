@@ -216,7 +216,7 @@ export const projects = [
     'Developed a Flask-based REST API for login and hierarchical user management, featuring authentication, role-based access control, user administration, permission management, and database integration using PostgreSQL.',
   tags: ['Python', 'Flask', 'PostgreSQL', 'REST API', 'Authentication', 'Authorization'],
   metric: { value: '5', label: 'API modules integrated' },
-  link: 'https://github.com/bawankarshruti4411/LoginHierarchyManagementAPI',
+  link: 'https://loginhierarchymanagementapi.onrender.com',
 },
 ];
 
