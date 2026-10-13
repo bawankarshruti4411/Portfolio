@@ -371,7 +371,7 @@ export const certificates = [
   issueDate: 'April 2026',
   credentialId: '',
   verifyUrl: '',
-  image: '/prompt-engineering.png',
+  image: '/certificates/prompt-engineering.png',
   skills: [
     'Prompt Engineering',
     'Generative AI',
@@ -389,7 +389,7 @@ export const certificates = [
   issueDate: 'July 2026',
   credentialId: 'ATCPL-26-27/Cert./226',
   verifyUrl: '',
-  image: '/aarkay-internship.png',
+  image: '/certificates/aarkay-internship.png',
   skills: [
     'Software Development',
     'Backend Development',
@@ -409,7 +409,7 @@ export const certificates = [
   issueDate: 'September 2025',
   credentialId: '',
   verifyUrl: '',
-  image: '/global-immersion-ait.jpg',
+  image: '/certificates/global-immersion-ait.jpg',
   skills: [
     'Cross-Cultural Communication',
     'Global Exposure',
@@ -428,7 +428,7 @@ export const certificates = [
   issueDate: 'August 2025',
   credentialId: '',
   verifyUrl: '',
-  image: '/data-science-summer-school.jpg',
+  image: '/certificates/data-science-summer-school.jpg',
   skills: [
     'Data Science',
     'Data Analysis',
@@ -447,7 +447,7 @@ export const certificates = [
   issueDate: 'March 2026',
   credentialId: '69c7b28a9fc323c8024a48a9',
   verifyUrl: 'https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_69c7b28a9fc323c8024a48a9_1774708412445_completion_certificate.pdf',
-  image: '/deloitte-data-analytics.png',
+  image: '/certificates/deloitte-data-analytics.png',
   skills: [
     'Data Analysis',
     'Forensic Technology',
@@ -465,7 +465,7 @@ export const certificates = [
   issueDate: 'March 2026',
   credentialId: '69c7b28a9fc323c8024a48a9',
   verifyUrl: 'https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_69c7b28a9fc323c8024a48a9_1774708414336_completion_certificate.pdf',
-  image: '/deloitte-cyber.png',
+  image: '/certificates/deloitte-cyber.png',
   skills: [
     'Cybersecurity',
     'Security Analysis',
@@ -483,7 +483,7 @@ export const certificates = [
   issueDate: 'March 2026',
   credentialId: '69c7b28a9fc323c8024a48a9',
   verifyUrl: 'https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_69c7b28a9fc323c8024a48a9_1774786990790_completion_certificate.pdf',
-  image: '/tata-cybersecurity-analyst.png',
+  image: '/certificates/tata-cybersecurity-analyst.png',
   skills: [
     'Identity and Access Management (IAM)',
     'IAM Strategy',
