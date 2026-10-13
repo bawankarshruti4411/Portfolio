@@ -519,7 +519,7 @@ export const certificates = [
   issueDate: 'July 2026',
   credentialId: '',
   verifyUrl: '',
-  image: '/certificates/crypto-heist-ctf.png',
+  image: '/certificates/crypto-heist-ctf.jpeg',
   skills: [
     'Capture the Flag (CTF)',
     'Cryptography',
