@@ -55,7 +55,7 @@ export default function CertificatesContent() {
         <span className={styles.addressLabel}>Address</span>
         <div className={styles.addressBox}>
           <img
-            src="/xp_icons/List File.ico"
+            src="/Portfolio/xp_icons/List File.ico"
             alt=""
             width={16}
             height={16}
@@ -179,7 +179,7 @@ export default function CertificatesContent() {
                   className={styles.verifyBtn}
                 >
                   <img
-                    src="/xp_icons/Internet Properties.ico"
+                    src="/Portfolio/xp_icons/Internet Properties.ico"
                     alt=""
                     width={16}
                     height={16}
@@ -207,7 +207,7 @@ export default function CertificatesContent() {
       <div className={styles.statusBar}>
         <span className={styles.statusSec}>
           <img
-            src="/xp_icons/List File.ico"
+            src="/Portfolio/xp_icons/List File.ico"
             alt=""
             width={12}
             height={12}
