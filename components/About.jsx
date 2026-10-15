@@ -5,9 +5,9 @@ import { aboutContent } from '../data/siteData';
 import styles from './About.module.css';
 
 const TABS = [
-  { name: 'Profile', icon: '/xp_icons/User 1.ico' },
-  { name: 'Skills', icon: '/xp_icons/System Properties.ico' },
-  { name: 'Philosophy', icon: '/xp_icons/Display.ico' },
+  { name: 'Profile', icon: '/Portfolio/xp_icons/User 1.ico' },
+  { name: 'Skills', icon: '/Portfolio/xp_icons/System Properties.ico' },
+  { name: 'Philosophy', icon: '/Portfolio/xp_icons/Display.ico' },
 ];
 
 export default function AboutContent() {
@@ -59,7 +59,7 @@ export default function AboutContent() {
           <div className={styles.profileTab}>
             <div className={styles.bioSection}>
               <div className={styles.sectionHeader}>
-                <img src="/xp_icons/My Profile Folder.ico" alt="" width={18} height={18} style={{ verticalAlign: 'middle', marginRight: 6 }} />
+                <img src="/Portfolio/xp_icons/My Profile Folder.ico" alt="" width={18} height={18} style={{ verticalAlign: 'middle', marginRight: 6 }} />
                 About Me
               </div>
               {aboutContent.bio.map((para, i) => (
@@ -70,7 +70,7 @@ export default function AboutContent() {
                   className={styles.resumeBtn}
                   onClick={() => openWindow('resume')}
                 >
-                  <img src="/xp_icons/List File.ico" alt="" width={16} height={16} style={{ verticalAlign: 'middle', marginRight: 6 }} />
+                  <img src="/Portfolio/xp_icons/List File.ico" alt="" width={16} height={16} style={{ verticalAlign: 'middle', marginRight: 6 }} />
                   View &amp; Print Full Resume (PDF)
                 </button>
               </div>
@@ -87,7 +87,7 @@ export default function AboutContent() {
         {tab === 'Skills' && (
           <div className={styles.skillsTab}>
             <div className={styles.sectionHeader}>
-              <img src="/xp_icons/System Properties.ico" alt="" width={18} height={18} style={{ verticalAlign: 'middle', marginRight: 6 }} />
+              <img src="/Portfolio/xp_icons/System Properties.ico" alt="" width={18} height={18} style={{ verticalAlign: 'middle', marginRight: 6 }} />
               Tools &amp; Techniques
             </div>
             <div className={styles.skillGrid}>
@@ -112,7 +112,7 @@ export default function AboutContent() {
         {tab === 'Philosophy' && (
           <div className={styles.philoTab}>
             <div className={styles.sectionHeader}>
-              <img src="/xp_icons/Display.ico" alt="" width={18} height={18} style={{ verticalAlign: 'middle', marginRight: 6 }} />
+              <img src="/Portfolio/xp_icons/Display.ico" alt="" width={18} height={18} style={{ verticalAlign: 'middle', marginRight: 6 }} />
               My Philosophy
             </div>
             {aboutContent.philosophy.map((item, i) => (
@@ -131,7 +131,7 @@ export default function AboutContent() {
       {/* ── Status bar ── */}
       <div className={styles.statusBar}>
         <span className={styles.statusSection}>
-          <img src="/xp_icons/User Accounts.ico" alt="" width={14} height={14} style={{ verticalAlign: 'middle', marginRight: 4 }} />
+          <img src="/Portfolio/xp_icons/User Accounts.ico" alt="" width={14} height={14} style={{ verticalAlign: 'middle', marginRight: 4 }} />
           Shruti Bawankar
         </span>
         <span className={styles.statusSection}>Nagpur, India</span>
