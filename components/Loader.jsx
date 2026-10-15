@@ -70,7 +70,7 @@ export default function Loader({ onComplete }) {
           {/* User provided Windows XP 4-pane logo */}
           <div className={styles.flagContainer}>
             <img
-              src="/windows_logo.png"
+              src="/Portfolio/windows_logo.png"
               alt="Windows Logo"
               width={140}
               height={140}
