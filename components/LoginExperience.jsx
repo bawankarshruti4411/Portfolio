@@ -24,7 +24,7 @@ export default function LoginExperience({ onComplete, onRestart }) {
       ) : (
         <section className={styles.selection} aria-label="Choose a profile">
           <div className={styles.brand}>
-            <img className={styles.windowsLogo} src="/windows_logo.png" alt="" />
+            <img className={styles.windowsLogo} src="/Portfolio/windows_logo.png" alt="" />
             <div className={styles.brandCopy}>
               <span className={styles.brandName}>{profile.name}</span>
               <span className={styles.brandSubtitle}>Personal Portfolio</span>
@@ -35,7 +35,7 @@ export default function LoginExperience({ onComplete, onRestart }) {
             <p className={styles.instruction}>To begin, click on your profile to enter.</p>
             <button className={styles.profileCard} type="button" onClick={() => setStage('welcome')}>
               <span className={styles.avatarFrame}>
-                <img src="/profile_portrait.png" alt="" className={styles.avatar} />
+                <img src="/Portfolio/profile_portrait.png" alt="" className={styles.avatar} />
               </span>
               <span className={styles.profileCopy}>
                 <span className={styles.profileName}>{profile.name}</span>
