@@ -12,7 +12,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&family=Inter:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" href="/favicon.svg" />
+        <link rel="icon" href="/Portfolio/favicon.svg" />
         <meta name="theme-color" content="#0a0e1a" />
       </Head>
       <body>
