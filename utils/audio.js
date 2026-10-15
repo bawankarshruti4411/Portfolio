@@ -68,7 +68,7 @@ export function playStartupAudio() {
 
   // 2. Try standard HTML5 Audio
   try {
-    const audio = new Audio('/windows-xp-startup.mp3');
+    const audio = new Audio('/Portfolio/windows-xp-startup.mp3');
     audio.volume = 0.95;
     const playPromise = audio.play();
 
