@@ -349,7 +349,7 @@ export const certificates = [
   issueDate: 'April 2026',
   credentialId: '',
   verifyUrl: '',
-  image: '/Portfolio/certificates/prompt-engineering.png',
+  image: '/certificates/prompt-engineering.png',
   skills: [
     'Prompt Engineering',
     'Generative AI',
@@ -367,7 +367,7 @@ export const certificates = [
   issueDate: 'July 2026',
   credentialId: 'ATCPL-26-27/Cert./226',
   verifyUrl: '',
-  image: '/Portfolio/certificates/aarkay-internship.png',
+  image: '/certificates/aarkay-internship.png',
   skills: [
     'Software Development',
     'Backend Development',
@@ -387,7 +387,7 @@ export const certificates = [
   issueDate: 'September 2025',
   credentialId: '',
   verifyUrl: '',
-  image: '/Portfolio/certificates/global-immersion-ait.jpg',
+  image: '/certificates/global-immersion-ait.jpg',
   skills: [
     'Cross-Cultural Communication',
     'Global Exposure',
@@ -406,7 +406,7 @@ export const certificates = [
   issueDate: 'August 2025',
   credentialId: '',
   verifyUrl: '',
-  image: '/Portfolio/certificates/data-science-summer-school.jpg',
+  image: '/certificates/data-science-summer-school.jpg',
   skills: [
     'Data Science',
     'Data Analysis',
@@ -425,7 +425,7 @@ export const certificates = [
   issueDate: 'March 2026',
   credentialId: '69c7b28a9fc323c8024a48a9',
   verifyUrl: 'https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_69c7b28a9fc323c8024a48a9_1774708412445_completion_certificate.pdf',
-  image: '/Portfolio/certificates/deloitte-data-analytics.png',
+  image: '/certificates/deloitte-data-analytics.png',
   skills: [
     'Data Analysis',
     'Forensic Technology',
@@ -443,7 +443,7 @@ export const certificates = [
   issueDate: 'March 2026',
   credentialId: '69c7b28a9fc323c8024a48a9',
   verifyUrl: 'https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_69c7b28a9fc323c8024a48a9_1774708414336_completion_certificate.pdf',
-  image: '/Portfolio/certificates/deloitte-cyber.png',
+  image: '/certificates/deloitte-cyber.png',
   skills: [
     'Cybersecurity',
     'Security Analysis',
@@ -461,7 +461,7 @@ export const certificates = [
   issueDate: 'March 2026',
   credentialId: '69c7b28a9fc323c8024a48a9',
   verifyUrl: 'https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_69c7b28a9fc323c8024a48a9_1774786990790_completion_certificate.pdf',
-  image: '/Portfolio/certificates/tata-cybersecurity-analyst.png',
+  image: '/certificates/tata-cybersecurity-analyst.png',
   skills: [
     'Identity and Access Management (IAM)',
     'IAM Strategy',
@@ -480,7 +480,7 @@ export const certificates = [
   issueDate: '',
   credentialId: '',
   verifyUrl: '',
-  image: '/Portfolio/certificates/ai-fluency-foundations.png',
+  image: '/certificates/ai-fluency-foundations.png',
   skills: [
     'AI Fluency',
     'Generative AI',
@@ -499,7 +499,7 @@ export const certificates = [
   issueDate: 'July 2026',
   credentialId: 'UC-66780d44-4c2d-470a-a693-12c3943dabe8',
   verifyUrl: 'https://ude.my/UC-66780d44-4c2d-470a-a693-12c3943dabe8',
-  image: '/Portfolio/certificates/mastering-agentic-ai.png',
+  image: '/certificates/mastering-agentic-ai.png',
   skills: [
     'Agentic AI',
     'Prompt Engineering',
@@ -519,7 +519,7 @@ export const certificates = [
   issueDate: 'July 2026',
   credentialId: '',
   verifyUrl: '',
-  image: '/Portfolio/certificates/crypto-heist-ctf.jpeg',
+  image: '/certificates/crypto-heist-ctf.jpeg',
   skills: [
     'Capture the Flag (CTF)',
     'Cryptography',
@@ -686,7 +686,7 @@ export const gallery = [
     location: 'AIT, Thailand',
     caption:
       'Presenting in 7-day international academic and cultural immersion program covering AI, FinTech, ESG, communication, and industry exposure.',
-    image: '/Portfolio/AIT/AIT.jpeg',
+    image: '/AIT/AIT.jpeg',
     aspect: '21:3',
     tags: ['Global Immersion Program', 'Artificial Intelligence', 'International Exposure','Fintech'],
   },
@@ -698,7 +698,7 @@ export const gallery = [
     location: 'AIT, Thailand',
     caption:
       'A collection of program essentials, including the AIT participant ID card, study tour materials, notebook, and souvenirs received during the international academic program.',
-    image: '/Portfolio/AIT/goodies.jpg',
+    image: '/AIT/goodies.jpg',
     aspect: '4:3',
     tags: ['Global Immersion Program', 'Program Essentials', 'International Experience'],
   },
@@ -710,7 +710,7 @@ export const gallery = [
     location: 'AIT, Thailand',
     caption:
       'Captured a memorable moment at AIT Bangkok while exploring its beautiful campus during the Global Immersion Program.',
-    image: '/Portfolio/AIT/self.jpeg',
+    image: '/AIT/self.jpeg',
     aspect: '16:9',
     tags: ['Global Immersion Program', 'Campus Exploration', 'International Experience'],
   },
@@ -734,7 +734,7 @@ export const gallery = [
     location: 'Ichitan Group, Ayutthaya, Thailand',
     caption:
       'Observed automated beverage production, bottling, labeling, packaging, and warehouse operations at Ichitan Group, gaining practical insights into industrial automation, operational efficiency, and product quality.',
-    image: '/Portfolio/AIT/factoryvisit.jpeg',
+    image: '/AIT/factoryvisit.jpeg',
     aspect: '4:3',
     tags: ['Industrial Visit', 'Manufacturing', 'Automation', 'Warehouse Operations', 'Technology'],
   },
@@ -746,7 +746,7 @@ export const gallery = [
     location: 'Asian Institute of Technology, Thailand',
     caption:
       'Celebrated the successful completion of the Global Immersion Program alongside fellow participants and faculty members, recognizing a rewarding international learning journey filled with academic insights, cultural exchange, and professional growth.',
-    image: '/Portfolio/AIT/group.jpeg',
+    image: '/AIT/group.jpeg',
     aspect: '4:3',
     tags: ['Global Immersion Program', 'Closing Ceremony', 'Certificate Distribution', 'Achievement', 'International Exposure'],
   },
@@ -757,7 +757,7 @@ export const gallery = [
     date: 'September 2025',
     location: 'Asian Institute of Technology, Thailand',
     caption: 'A memorable group photograph celebrating an enriching international learning experience with fellow students and program participants.',
-    image: '/Portfolio/AIT/mam_1.jpeg',
+    image: '/AIT/mam_1.jpeg',
     aspect: '4:3',
     tags: ['Global Immersion', 'Teamwork', 'AIT', 'International Exposure']
   },
@@ -768,7 +768,7 @@ export const gallery = [
     date: 'September 2025',
     location: 'Asian Institute of Technology, Thailand',
     caption: 'A memorable group photograph celebrating an enriching international learning experience with fellow students and program participants.',
-    image: '/Portfolio/AIT/mam_1.jpeg',
+    image: '/AIT/mam_1.jpeg',
     aspect: '4:3',
     tags: ['Global Immersion', 'Teamwork', 'AIT', 'International Exposure']
   },
@@ -779,7 +779,7 @@ export const gallery = [
     date: 'September 2025',
     location: 'Asian Institute of Technology, Thailand',
     caption: 'Participated in an academic session on the fundamentals of Artificial Intelligence for Business Leaders, gaining exposure to AI applications and their role in business and innovation.',
-    image: '/Portfolio/AIT/sir.jpeg',
+    image: '/AIT/sir.jpeg',
     aspect: '3:4',
     tags: ['Artificial Intelligence', 'Academic Session', 'AIT', 'AI Applications']
   },
@@ -790,7 +790,7 @@ export const gallery = [
     date: 'September 2025',
     location: 'Ichitan Green Factory, Thailand',
     caption: 'Explored sustainability-focused exhibits and learned about the role of renewable energy and environmentally responsible industrial practices.',
-    image: '/Portfolio/AIT/photoshop.jpeg',
+    image: '/AIT/photoshop.jpeg',
     aspect: '4:3',
     tags: ['Sustainability', 'Industrial Visit', 'Innovation', 'Thailand']
   },
@@ -801,7 +801,7 @@ export const gallery = [
     date: 'September 2025',
     location: 'Ichitan Green Factory, Thailand',
     caption: 'A group photograph capturing the industrial visit experience, offering insights into sustainable manufacturing and modern industrial practices.',
-    image: '/Portfolio/AIT/photoshop_1.jpeg',
+    image: '/AIT/photoshop_1.jpeg',
     aspect: '4:3',
     tags: ['Industrial Exposure', 'Green Manufacturing', 'Teamwork', 'Learning']
   },
@@ -812,7 +812,7 @@ export const gallery = [
     date: 'September 2025',
     location: 'Asian Institute of Technology, Thailand',
     caption: 'Received a certificate of participation upon completing the Global Immersion Program, recognizing an enriching international academic experience.',
-    image: '/Portfolio/AIT/recieving_certificate.jpeg',
+    image: '/AIT/recieving_certificate.jpeg',
     aspect: '3:4',
     tags: ['Certificate', 'Achievement', 'Global Immersion', 'Academic Excellence']
   },
