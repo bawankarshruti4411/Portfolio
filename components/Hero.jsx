@@ -18,7 +18,9 @@ export default function HeroContent() {
             onError={(e) => { e.currentTarget.style.display = 'none'; }}
           />
           <div className={styles.avatarFallback} aria-hidden="true">
-            {profile.initials}
+            <span className={styles.avatarFrame}>
+                <img src="/profile_portrait.png" alt="" className={styles.avatar} />
+              </span>
           </div>
         </div>
         <div className={styles.profileInfo}>
