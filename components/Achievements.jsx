@@ -48,7 +48,7 @@ export default function AchievementsContent() {
         <span className={styles.addressLabel}>Address</span>
         <div className={styles.addressBox}>
           <img
-            src="/Portfolio/xp_icons/Activate Windows.ico"
+            src="/xp_icons/Activate Windows.ico"
             alt=""
             width={16}
             height={16}
@@ -160,7 +160,7 @@ export default function AchievementsContent() {
       <div className={styles.statusBar}>
         <span className={styles.statusSec}>
           <img
-            src="/Portfolio/xp_icons/Activate Windows.ico"
+            src="/xp_icons/Activate Windows.ico"
             alt=""
             width={12}
             height={12}
